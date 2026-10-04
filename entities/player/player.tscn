@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://65fucw2ndsj2"]
+
+[ext_resource type="Texture2D" uid="uid://mt85us23w70e" path="res://spacepixels-0.2.0/pixel_ship.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://b5h43gfsgy523" path="res://entities/player/player.gd" id="1_abrql"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ibwjd"]
+
+[node name="Player" type="CharacterBody2D" unique_id=632112910]
+script = ExtResource("1_abrql")
+
+[node name="ShipSprit" type="Sprite2D" parent="." unique_id=807807375]
+position = Vector2(-2.3841858e-07, 0)
+rotation = -0.0014772563
+scale = Vector2(0.37211964, 0.36564457)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1055168915]
+shape = SubResource("CircleShape2D_ibwjd")
+
+[node name="Muzzel" type="Marker2D" parent="." unique_id=324594449]
+position = Vector2(0, -16)
