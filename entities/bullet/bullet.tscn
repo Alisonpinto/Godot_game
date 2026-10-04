@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b7vhj6mcrmxcj"]
+
+[ext_resource type="Texture2D" uid="uid://hj7rv4lc62wi" path="res://spacepixels-0.2.0/pixel_laser_yellow.png" id="1_78c8h"]
+
+[node name="bullet" type="Node2D" unique_id=1451942824]
+
+[node name="bulletsprit" type="Sprite2D" parent="." unique_id=1964917887]
+texture = ExtResource("1_78c8h")
