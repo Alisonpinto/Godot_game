@@ -1,8 +1,18 @@
 [gd_scene format=3 uid="uid://b7vhj6mcrmxcj"]
 
+[ext_resource type="Script" uid="uid://c20rum5amrbc2" path="res://entities/bullet/bullet.gd" id="1_2kyv7"]
 [ext_resource type="Texture2D" uid="uid://hj7rv4lc62wi" path="res://spacepixels-0.2.0/pixel_laser_yellow.png" id="1_78c8h"]
 
-[node name="bullet" type="Node2D" unique_id=1451942824]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ibwjd"]
+
+[node name="bullet" type="Area2D" unique_id=142697372]
+collision_layer = 2
+script = ExtResource("1_2kyv7")
 
 [node name="bulletsprit" type="Sprite2D" parent="." unique_id=1964917887]
 texture = ExtResource("1_78c8h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1735446582]
+visibility_layer = 3
+shape = SubResource("RectangleShape2D_ibwjd")
+debug_color = Color(0.6806668, 0.5029894, 0.06715282, 0.41960785)
