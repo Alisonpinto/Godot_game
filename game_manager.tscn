@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dl3smsxtjhwi5" path="res://spacepixels-0.2.0/background-black.png" id="1_70yv6"]
 [ext_resource type="PackedScene" uid="uid://65fucw2ndsj2" path="res://entities/player/player.tscn" id="2_smx3j"]
 [ext_resource type="Texture2D" uid="uid://ddvpdgtve084c" path="res://spacepixels-0.2.0/horizontal_bar_blue.png" id="3_o2178"]
+[ext_resource type="PackedScene" uid="uid://cd7u6goaqqpvi" path="res://entities/enimes/enemy.tscn" id="4_d5upp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lfkbx"]
 size = Vector2(19.861061, 3.592393)
@@ -11,7 +12,7 @@ size = Vector2(19.861061, 3.592393)
 scale = Vector2(0.9955519, 1.0790164)
 
 [node name="BackgroundSprit" type="Sprite2D" parent="." unique_id=319874155]
-position = Vector2(200, 300)
+position = Vector2(200.89359, 296.56638)
 scale = Vector2(1, 1.5)
 texture = ExtResource("1_70yv6")
 
@@ -32,3 +33,6 @@ position = Vector2(209.27481, 425.67075)
 scale = Vector2(-3.0835466, 1.7356781)
 texture = ExtResource("3_o2178")
 offset = Vector2(2.6255875, 1.5258789e-05)
+
+[node name="enemy" parent="." unique_id=79326779 instance=ExtResource("4_d5upp")]
+position = Vector2(192.85785, 126.040695)

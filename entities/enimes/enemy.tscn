@@ -1,11 +1,19 @@
 [gd_scene format=3 uid="uid://cd7u6goaqqpvi"]
 
+[ext_resource type="Script" uid="uid://babfij0pnjhqt" path="res://entities/enimes/enemy.gd" id="1_fhhay"]
 [ext_resource type="Texture2D" uid="uid://5fwejybfbsrj" path="res://spacepixels-0.2.0/pixel_ship_red.png" id="1_nxkx6"]
 
-[node name="enemy" type="Node2D" unique_id=1960896218]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ibwjd"]
+
+[node name="enemy" type="Area2D" unique_id=79326779 groups=["player_bullet"]]
+script = ExtResource("1_fhhay")
 
 [node name="ShipRedSprit" type="Sprite2D" parent="." unique_id=2103847653]
 position = Vector2(1.13686756e-13, -4.7683716e-07)
-rotation = 3.1415927
+rotation = -3.1415925
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_nxkx6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=454210863]
+visibility_layer = 2
+shape = SubResource("RectangleShape2D_ibwjd")
