@@ -10,9 +10,11 @@ The game uses a simple retro space style, quick controls, and exciting survival 
 
 ## Gameplay Preview
 
-### Screenshot
+### Screenshots
 
-![Rocket Space Launcher Screenshot](assets/screenshort1.png)
+![Rocket Space Launcher Screenshot 1](assets/screenshort1.png)
+![Rocket Space Launcher Screenshot 2](assets/Screenshot%202026-10-10%20024442.png)
+![Rocket Space Launcher Screenshot 3](assets/Screenshot%202026-10-10%20024453.png)
 
 ### Gameplay Video
 
