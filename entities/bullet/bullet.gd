@@ -1,3 +1,4 @@
+
 extends Area2D
 
 @export var speed: float = 900.0
@@ -16,7 +17,7 @@ func _ready() -> void:
 	collision_layer = 2
 	collision_mask = 1
 
-	# Detect other Area2D objects.
+	# Allow collision detection.
 	monitoring = true
 	monitorable = true
 
@@ -25,7 +26,6 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-
 	# Move upward.
 	global_position.y -= speed * delta
 
@@ -37,9 +37,11 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_area_entered(area: Area2D) -> void:
-
 	print("BULLET HIT: ", area.name)
 
 	if area.is_in_group("enemy"):
+		# Damage the enemy.
 		area.take_damage()
+
+		# Remove the bullet.
 		queue_free()
